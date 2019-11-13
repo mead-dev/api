@@ -197,7 +197,6 @@ exports.getMyCommunities = async (req, res, next) => {
             const followers = users.filter(u => u.communities.includes(userId));
             const following = users.filter(u => communityOwner.communities.includes(u._id));
             const messages = await Message.find({ communityId: userId }).populate('userId');
-            console.log(communityOwner);
 
             communities.push({
                 products,
