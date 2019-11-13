@@ -98,6 +98,10 @@ app.get('/csrf', (req, res, next) => {
     // next();
 });
 
+app.get('/', (req, res, next) => {
+    res.status(200).json({ message: 'Bienvenue dans l\'API de MEAD' });
+});
+
 // Filling up the database
 app.use(async (req, res, next) => {
     try {
