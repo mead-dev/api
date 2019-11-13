@@ -13,8 +13,8 @@ const bcrypt = require('bcryptjs');
 const User = require('./models/user');
 const Role = require('./models/role');
 
-const MONGODB_URI = 'mongodb://localhost:27017/mead';
-// const MONGODB_URI = 'mongodb://marvinboris:Marvinboris1@node-complete-shard-00-00-mt9rd.mongodb.net:27017,node-complete-shard-00-01-mt9rd.mongodb.net:27017,node-complete-shard-00-02-mt9rd.mongodb.net:27017/messages?ssl=true&replicaSet=node-complete-shard-0&authSource=admin';
+// const MONGODB_URI = 'mongodb://localhost:27017/mead';
+const MONGODB_URI = 'mongodb://marvinboris:Marvinboris1@node-complete-shard-00-00-mt9rd.mongodb.net:27017,node-complete-shard-00-01-mt9rd.mongodb.net:27017,node-complete-shard-00-02-mt9rd.mongodb.net:27017/mead?ssl=true&replicaSet=node-complete-shard-0&authSource=admin';
 
 const app = express();
 const store = new MongoDBStore({
